@@ -66,5 +66,34 @@
 				Скидка 10% для друзей из социальных сетей.
 			</p>
 		</footer>
+		<section class="modal modal-feedback">
+			<h2>Напишите нам</h2>
+			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+				<p>
+					<label for="name-second-name"> <!--Возможно нужен класс будет-->
+							Ваше имя:
+					</label>
+					<input id="name-second-name" type="text" name="name" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="e-mail"> <!--Возможно нужен класс будет-->
+						Ваш e-mail:
+					</label>
+					<input id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
+				</p>
+				<p>
+				<label for="text-letter"> <!--Возможно нужен класс будет-->
+					Текст письма:
+				</label>
+				<input id="text-letter" type="text" name="text-letter" placeholder="В свободной форме">
+				</p>
+				<button class="button" type="submit">
+					Отправить
+				</button>
+			</form>
+			<button class="close-modal" type="button">
+				Закрыть
+			</button>
+		</section>
 	</body>
 </html>
