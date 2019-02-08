@@ -46,25 +46,126 @@ a {
 .service h2 {
 	font-size: 24px;
 	line-height: 30px;
+	color: black;
 }
 .service a {
 	color: white;
 }
+/*Может как-то можно лучше псевдоклассы сделать?(что бы не дублировать)*/
 .web-site {
-	background: url("img/service-web-site.jpg");
+	background-image: url("../img/service-web-site.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
 }
-.web-site .button {
+.web-site .button,
+.catalog-button {
 	background: #fb565a;
 }
+.web-site .button:hover,
+.catalog-button:hover {
+	background: #e74246;
+}
+.web-site .button:focus,
+.catalog-button:focus {
+	background: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+}
 .apps {
-	background: url("img/service-apps.jpg");
+	background-image: url("../img/service-apps.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 .apps .button {
 	background: #00ca74;
 }
-.presentation {
-	background: url("img/service-presentation.jpg")
+.apps .button:hover {
+	background: #00bc6c;
+}
+.apps .button:focus {
+	background: #00aa62;
+	color: rgba(255, 255, 255, 0.3);
+}
+.presentation {	
+	background-image: url("../img/service-presentation.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 .presentation .button {
 	background: #efc84a;
+}
+.presentation .button:hover {
+	background: #eab534;
+}
+.presentation .button:focus {
+	background: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+}
+.footer-social {
+  text-align: center;
+}
+.footer-social a {
+	color: #e1e1e1;
+}
+.footer-social ul {
+  list-style: none;
+}
+.footer-slogan {
+	color: ##444444;
+	line-height: 22px;
+	width: 545px; /*или лучше br в html? для переноса строки*/
+}
+.footer-slogan b {
+	color: #000000;
+	font-size: 36px;
+	line-height: 36px;
+}
+/*здесь начинается разметка каталога*/
+.container h1 {
+	font-size: 55px;
+	line-height: 55px;
+	color: black;
+}
+.filter-button {
+	background-color: #eeeeee;
+	color: black;
+	line-height: 18px;
+}
+.filter-button:hover {
+	background-color: #dfdfdf;
+}
+.filter-button:focus {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+}
+.filters fieldset {
+	border: none;
+}
+.filters legend {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.filters ul {
+	list-style: none;
+	line-height: 20px;
+}
+.filter-input:disabled + label {
+	color: rgba(40, 49, 54, 0.3);
+}
+.catalog-item {
+	list-style: none;
+}
+.catalog-item a {
+	color: white;
+	text-transform: uppercase;
+}
+.catalog-item h3 {
+	color: black;
+	line-height: 30px;
+	font-size: 18px;
+}
+.catalog-item-information {
+	color: #666666;
+	line-height: 18px;
 }
