@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+  letter-spacing: normal;
+  text-align: left;
+	color: #283136;
+	background: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+.button {
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+}
+.main-navigation,
+.login-cart {
+	line-height: 30px;
+	color:#000000;
+	background: #eeeeee;
+} 
+.main-menu {
+	list-style: none;
+}
+.main-menu a,
+.login-cart a {
+	color: #000000;
+}
+.main-menu a:hover,
+.login-cart a:hover {
+	color: #fb565a;
+}
+.main-menu a:focus,
+.login-cart a:focus {
+	color: rgba(0, 0, 0, 0.3);
+}
+.service {
+	list-style: none;
+}
+.service h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+.service a {
+	color: white;
+}
+.web-site {
+	background: url("img/service-web-site.jpg");
+}
+.web-site .button {
+	background: #fb565a;
+}
+.apps {
+	background: url("img/service-apps.jpg");
+}
+.apps .button {
+	background: #00ca74;
+}
+.presentation {
+	background: url("img/service-presentation.jpg")
+}
+.presentation .button {
+	background: #efc84a;
+}
