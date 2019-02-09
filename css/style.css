@@ -1,11 +1,11 @@
 body {
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: normal;
-  letter-spacing: normal;
-  text-align: left;
+	letter-spacing: normal;
+	text-align: left;
 	color: #283136;
 	background: #ffffff;
 }
@@ -36,8 +36,8 @@ a {
 .login-cart a:hover {
 	color: #fb565a;
 }
-.main-menu a:focus,
-.login-cart a:focus {
+.main-menu a:active,
+.login-cart a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 .service {
@@ -65,8 +65,8 @@ a {
 .catalog-button:hover {
 	background: #e74246;
 }
-.web-site .button:focus,
-.catalog-button:focus {
+.web-site .button:active,
+.catalog-button:active {
 	background: #d7373b;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -81,7 +81,7 @@ a {
 .apps .button:hover {
 	background: #00bc6c;
 }
-.apps .button:focus {
+.apps .button:active {
 	background: #00aa62;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -96,7 +96,7 @@ a {
 .presentation .button:hover {
 	background: #eab534;
 }
-.presentation .button:focus {
+.presentation .button:active {
 	background: #e5a722;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -110,7 +110,7 @@ a {
   list-style: none;
 }
 .footer-slogan {
-	color: ##444444;
+	color: #444444;
 	line-height: 22px;
 	width: 545px; /*или лучше br в html? для переноса строки*/
 }
@@ -133,7 +133,7 @@ a {
 .filter-button:hover {
 	background-color: #dfdfdf;
 }
-.filter-button:focus {
+.filter-button:active {
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
 }
