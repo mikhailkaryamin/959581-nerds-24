@@ -25,8 +25,40 @@ a {
 	color:#000000;
 	background: #eeeeee;
 } 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.main-navigation,
+.login-cart,
+.main-menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  justify-content: space-between;
+}
+.main-header {
+	width: 100%;
+	height: 132px;
+	background-color: #eeeeee;
+}
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+}
 .main-menu {
 	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 440px;
+	/*Временный фон*/
+	background: #00ca74;
+}
+.login-cart {
+	width: 120px;
+		/*Временный фон*/
+		background:#fb565a;
 }
 .main-menu a,
 .login-cart a {
@@ -41,6 +73,10 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 .service {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+	padding: 0px;
 	list-style: none;
 }
 .service h2 {
@@ -51,7 +87,14 @@ a {
 .service a {
 	color: white;
 }
-/*Может как-то можно лучше псевдоклассы сделать?(что бы не дублировать)*/
+.web-site,
+.apps,
+.presentation {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
 .web-site {
 	background-image: url("../img/service-web-site.jpg");
 	background-repeat: no-repeat;
