@@ -6,7 +6,7 @@
   <title>Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" />
   <link href="css/normalize.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style-min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -138,26 +138,37 @@
       <h2 class="visually-hidden">Портфолио</h2>
       <ul class="portfolio">
         <li>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/portfolio-html.png" alt="HTML academy"
-              width="199" height="68" /></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="portfolio-html" src="img/portfolio-html.png" alt="HTML academy" width="199" height="68" />
+          </a>
         </li>
         <li>
-          <a href="#"><img src="img/portfolio-borodinski.png" width="209" height="90" alt="borodinski" /></a>
+          <a href="#">
+            <img class="portfolio-boroda" src="img/portfolio-borodinski.png" width="209" height="90" alt="borodinski" />
+          </a>
         </li>
         <li>
-          <a href="#"><img src="img/portfolio-pink.png" width="185" height="52" alt="pink" /></a>
+          <a href="#">
+            <img class="portfolio-pink" src="img/portfolio-pink.png" width="185" height="52" alt="pink" />
+          </a>
         </li>
         <li>
-          <a href="#"><img src="img/portfolio-mishka.png" width="173" height="84" alt="mishka" /></a>
+          <a href="#">
+            <img class="portfolio-mishka" src="img/portfolio-mishka.png" width="173" height="84" alt="mishka" />
+          </a>
         </li>
       </ul>
     </section>
     <section>
       <h2 class="visually-hidden">Контакты Нердс</h2>
       <div class="contacts-map">
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65094655740637!2d30.32249888819687!3d59.93871649886174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551277861847"
+          allowfullscreen>
+        </iframe>
         <div class="container">
           <div class="contacts-details">
-            <h2>NЁRDS DESIGN STUDIO</h2>
+            <h2 class="contacts-details-headline">NЁRDS DESIGN STUDIO</h2>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p>
               тел. +7 (812) 275-75-75
@@ -167,9 +178,6 @@
             </a>
           </div>
         </div>
-        <iframe class="maps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65094655740637!2d30.32249888819687!3d59.93871649886174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551277861847"
-          allowfullscreen></iframe>
       </div>
     </section>
   </main>
@@ -220,7 +228,7 @@
             <label for="name-second-name">
               Ваше имя:
             </label>
-            <input id="name-second-name" type="text" name="your-name" placeholder="Имя Фамилия"/>
+            <input id="name-second-name" type="text" name="your-name" placeholder="Имя Фамилия" />
           </p>
           <p class="entry-field">
             <label for="e-mail">
@@ -238,7 +246,9 @@
             Отправить
           </button>
         </form>
-        <button class="close-modal button-close" type="button" name="Закрыть"></button>
+        <button class="close-modal button-close" type="button" name="Закрыть">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </div>
     </div>
   </section>

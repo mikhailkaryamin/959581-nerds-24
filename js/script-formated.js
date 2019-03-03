@@ -5,12 +5,13 @@ var form = popup.querySelector("form");
 var your_name = popup.querySelector("[name=your-name]");
 var mail = popup.querySelector("[name=e-mail]");
 var isStorageSupport = true;
-var storage = "";
-var text_letter = popup.querySelector("[name=text-letter]")
+var storageName = "";
+var storageMail = "";
+var textLetter = popup.querySelector("[name=text-letter]");
 
 try {
-  storage = localStorage.getItem("your_name");
-  storage = localStorage.getItem("mail");
+  storageName = localStorage.getItem("your_name");
+  storageMail = localStorage.getItem("mail");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -18,10 +19,10 @@ try {
 openPopupButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.add('modal--show');
-  if (storage) {
-    your_name.value = storage;
-    mail.value = storage;
-    text_letter.focus();
+  if (storageName || storageMail) {
+    your_name.value = storageName;
+    mail.value = storageMail;
+    textLetter.focus();
   } else {
     your_name.focus();
   }
