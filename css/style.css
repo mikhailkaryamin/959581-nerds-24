@@ -1264,6 +1264,9 @@ input[type="radio"].visually-hidden {
   width: 4px;
   background-color: #fb565a;
 }
+.close-modal:focus {
+  outline: 1px solid;
+}
 .close-modal::before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
