@@ -1181,6 +1181,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   line-height: 45px;
   color:#000000;
+  font-weight: 500;
 }
 .modal-feedback label {
   color: #000000;
