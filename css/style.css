@@ -1181,6 +1181,9 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   line-height: 45px;
 }
+.modal-feedback label {
+  color: #000000;
+}
 .feedback-form {
   display: -webkit-box;
   display: -ms-flexbox;
